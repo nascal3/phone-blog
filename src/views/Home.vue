@@ -1,14 +1,14 @@
 <template>
-  <v-container>
-    <v-row class="content">
-      <v-col class="content__blog" cols="12" md="8">
+  <section>
+    <v-row class="blog-content">
+      <v-col class="blog-content__article" cols="12" md="8">
         <blog-content />
       </v-col>
-      <v-col class="content__sidebar" cols="12" md="4">
+      <v-col class="blog-content__sidebar" cols="12" md="4">
         <side-bar />
       </v-col>
     </v-row>
-  </v-container>
+  </section>
 </template>
 
 <script>

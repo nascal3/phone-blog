@@ -1,23 +1,25 @@
-.container {
-  padding: 0;
 
-  .content {
 
-    &__blog {
-      padding-top: 0;
-      padding-bottom: 0;
+.blog-content {
+  padding: 0 267px;
+  @media (max-width: 786px) {
+    padding: 0;
+  }
 
-      @media (max-width: 786px) {
-       padding: 0;
-      }
+  &__article {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    @media (max-width: 786px) {
+     padding: 0;
     }
-    &__sidebar {
-      padding-top: 0;
-      padding-bottom: 0;
+  }
+  &__sidebar {
+    padding-top: 0;
+    padding-bottom: 0;
 
-      @media (max-width: 786px) {
-        padding: 0;
-      }
+    @media (max-width: 786px) {
+      padding: 0;
     }
   }
 }

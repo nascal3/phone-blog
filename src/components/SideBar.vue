@@ -1,6 +1,7 @@
 <template>
   <section class="sidebar">
-    sidebar
+    <!--    article content header-->
+    <v-btn class="sidebar__button" depressed block> send me the tips</v-btn>
   </section>
 </template>
 

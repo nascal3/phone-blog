@@ -1,6 +1,5 @@
 <template>
   <section class="article-content">
-
     <!--    article content header-->
     <div class="article-content__header">
       <h1>10 Best Photo Apps For Incredible iPhone Photography (2020 Edition)</h1>
