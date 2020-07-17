@@ -1,10 +1,10 @@
 <template>
   <v-container>
     <v-row class="content">
-      <v-col cols="12" md="8">
+      <v-col class="content__blog" cols="12" md="8">
         <blog-content />
       </v-col>
-      <v-col cols="12" md="4">
+      <v-col class="content__sidebar" cols="12" md="4">
         <side-bar />
       </v-col>
     </v-row>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import BlogContent from '@/components/BlogContent'
+import BlogContent from '@/components/ArticleContent'
 import SideBar from '@/components/SideBar'
 
 export default {

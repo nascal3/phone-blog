@@ -10,13 +10,11 @@
  */
 body, html {
   height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 html {
   font-size: 16px;
-  line-height: 1.15;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -40,13 +38,20 @@ main {
 }
 
 /**
- * Correct the font size and margin on `h1` elements within `section` and
+ * Correct the font size and margin on `h1, h2` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 26px;
+  line-height: 31px;
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 16px 0;
 }
 
 /* Grouping content

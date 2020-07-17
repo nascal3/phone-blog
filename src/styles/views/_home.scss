@@ -1,4 +1,25 @@
+.container {
+  padding: 0;
 
-.content {
-  margin-top: 76px;
+  .content {
+
+    &__blog {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      @media (max-width: 786px) {
+       padding: 0;
+      }
+    }
+    &__sidebar {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      @media (max-width: 786px) {
+        padding: 0;
+      }
+    }
+  }
 }
+
+

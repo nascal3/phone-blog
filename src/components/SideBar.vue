@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="sidebar">
     sidebar
   </section>
 </template>
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  @import 'src/styles/components/sideBar';
 </style>
