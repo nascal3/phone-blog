@@ -8,18 +8,29 @@
         <side-bar />
       </v-col>
     </v-row>
+    <v-overlay light :value="showDialog">
+      <modal-form/>
+    </v-overlay>
   </section>
 </template>
 
 <script>
 import BlogContent from '@/components/ArticleContent'
 import SideBar from '@/components/SideBar'
+import ModalForm from '@/components/ModalForm'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'Home',
   components: {
     BlogContent,
-    SideBar
+    SideBar,
+    ModalForm
+  },
+  computed: {
+    ...mapGetters({
+      showDialog: 'showDialog'
+    })
   }
 }
 </script>

@@ -2,6 +2,10 @@
 
 .blog-content {
   padding: 0 267px;
+  @media (max-width: 1024px) {
+    padding: 0 160px;
+  }
+
   @media (max-width: 786px) {
     padding: 0;
   }

@@ -17,7 +17,7 @@
 
     <!--    article content photo-->
     <div class="article-content__image">
-      <v-img :src="require('@/assets/images/img.jpg')"></v-img>
+      <v-img :src="require('@/assets/images/img@2x.jpg')"></v-img>
     </div>
 
     <!--    article content title-->
@@ -66,5 +66,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import 'src/styles/components/articleContnent';
+  @import '../styles/layouts/articleContnent';
 </style>

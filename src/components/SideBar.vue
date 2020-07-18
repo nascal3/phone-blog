@@ -1,16 +1,26 @@
 <template>
   <section class="sidebar">
-    <!--    article content header-->
-    <v-btn class="sidebar__button" depressed block> send me the tips</v-btn>
+    <v-btn
+      class="gradient-button"
+      depressed
+      block
+      @click="openDialog">
+      send me the tips
+    </v-btn>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'SideBar'
+  name: 'SideBar',
+  methods: {
+    openDialog () {
+      this.$store.commit('SHOW_DIALOG', true)
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-  @import 'src/styles/components/sideBar';
+  @import 'src/styles/layouts/sideBar';
 </style>

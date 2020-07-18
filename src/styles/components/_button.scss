@@ -1,0 +1,39 @@
+
+.gradient-button {
+  border-radius: 0 !important;
+  color: $white !important;
+  text-transform: capitalize !important;
+  background: linear-gradient(90deg, $secondary 0.83%, $primary 100%);
+  box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5) !important;
+
+  @media (max-width: 786px) {
+    height: 50px !important;
+    font-size: 18px !important;
+  }
+
+  &.disable-button {
+    position: relative;
+    cursor: default;
+    pointer-events:none;
+
+    ::before {
+      content: '';
+      position: absolute;
+      height: 209%;
+      width: 108%;
+      top: -9px;
+      left: -16px;
+      opacity: 45%;
+      background-color: $white;
+
+      @media (max-width: 786px) {
+        top: -14px;
+        left: -16px;
+        width: 115%;
+        height: 228%;
+      }
+    }
+  }
+
+}
+
